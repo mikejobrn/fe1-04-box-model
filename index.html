@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Chewy&family=Luckiest+Guy&family=Merienda:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Luckiest Guy', sans-serif;
+        }
+
+        body {
+            background-image: url(https://cdn.architextures.org/textures/20/11/walnut-5fc4d06533abf-1200.jpg);
+        }
+
+        p {
+            background-color: white;
+            color: white;
+            display: inline-block;
+            padding: 50px 80px;
+            font-size: 200px;
+            text-align: center;
+            text-shadow: -10px 10px 0 black;
+            box-sizing: border-box;
+            border-radius: 15px;
+            outline: 20px solid white;
+            margin: 30px;
+            transition: all 0.5s;
+            position: relative;
+            top: calc(50vh - 200px);
+            left: calc(50vw - 4 * (245px + 80px) / 2);
+        }
+
+        .copas {
+            background-color: red;
+        }
+
+        .ouro {
+            background-color: gold;
+        }
+
+        .paus {
+            background-color: green;
+        }
+
+        .espadas {
+            background-color: blue;
+        }
+
+        p:hover {
+            box-shadow: 0 0 25px 25px white;
+            filter: brightness(1.2);
+            transform: scale(1.05);
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p class="copas">7</p>
+    <p class="ouro">3</p>
+    <p class="paus">2</p>
+    <p class="espadas">5</p>
+</body>
+</html>
